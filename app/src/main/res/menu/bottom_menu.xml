@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Fragment1"
+        android:id="@+id/f1"/>
+    <item android:title="Fragment2"
+        android:id="@+id/f2"/>
+
+</menu>
