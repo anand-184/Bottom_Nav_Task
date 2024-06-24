@@ -30,6 +30,13 @@ class MainActivity : AppCompatActivity() {
             }
             return@setOnItemSelectedListener true
         }
+        navController?.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.fragment_login -> supportActionBar?.title = "Fragment One"
+                R.id.fragment_sign-> supportActionBar?.title = "Fragment Two"
+            }
+        }
+
 
     }
 }
