@@ -32,12 +32,12 @@ class MainActivity : AppCompatActivity() {
         }
         navController?.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.fragment_login -> supportActionBar?.title = "Fragment One"
-                R.id.fragment_sign-> supportActionBar?.title = "Fragment Two"
+                R.id.fragment_login -> {supportActionBar?.title = "Fragment One"
+                binding?.bottomNav?.menu?.findItem(R.id.f1)?.isChecked =true
+                }
+                R.id.fragment_sign-> {supportActionBar?.title = "Fragment Two"
+                binding?.bottomNav?.menu?.findItem(R.id.f2)?.isChecked = true}
             }
         }
-
-
-
     }
 }
